@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*Main content, all content*/
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 5% 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #314B5B;
+  color: #f1f1f1;
+
+}
+
+/*Width for search and result*/
+
+.results-search,
+.form-search {
+  width: 100%;
+}
+
+/*Style form search*/
+
+.form-search > 
+.submit, 
+.search {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.search {
+  width: 80%;
+  margin-right: -4px;
+  color: #314B5B
+}
+
+.submit {
+  width: 20%;
+  background: #3498DB;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition-duration: .2s
+}
+
+.submit:hover {
+  opacity: 0.9;
+  transition-duration: .2s
+}
+
+/*Style results block*/
+
+.results-search {
+  margin: 5em 0 0 0
+}
+
+.results-search 
+> .name, 
+span {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.results-search 
+> p {
+  letter-spacing: .1em;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}

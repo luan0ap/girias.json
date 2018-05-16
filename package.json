@@ -1,0 +1,37 @@
+{
+  "name": "girias",
+  "version": "1.0.0",
+  "description": "Simples SPA for listing all slangs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -w --mode development --module-bind js=babel-loader --output-path='./public/dist'",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "server": "json-server girias.json --static ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luan0ap/girias.json.git"
+  },
+  "keywords": [
+    "slang",
+    "spa",
+    "javascript",
+    "vanilla",
+    "application",
+    "studies"
+  ],
+  "author": "Luan AP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luan0ap/girias.json/issues"
+  },
+  "homepage": "https://github.com/luan0ap/girias.json#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
