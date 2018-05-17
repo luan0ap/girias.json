@@ -1,0 +1,1 @@
+export const Error = `<span class="error">Gíria não encontrada!</span>`

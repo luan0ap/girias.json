@@ -71,8 +71,14 @@ span {
   font-weight: bold;
 }
 
+.results-search
+> .error {
+  color: #ff7979
+}
+
 .results-search 
 > p {
   letter-spacing: .1em;
   font-family: Georgia, 'Times New Roman', Times, serif
 }
+

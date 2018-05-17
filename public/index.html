@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
@@ -8,21 +9,21 @@
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
   <title>Gírias Searcher</title>
 </head>
+
 <body>
   <main class="main">
-    <form action="/" class="form-search">
-      <input type="search" name="search" class="search" id="" placeholder="">
-      <button class="submit"><i class="fas fa-search"></i></button>
+    <form action="/" class="form-search" data-js="form">
+      <input type="search" name="search" class="search" id="" placeholder="Insira a gíria que deseja encontrar" data-js="input">
+      <button type="submit" class="submit">
+        <i class="fas fa-search"></i>
+      </button>
     </form>
 
-    <section class="results-search">
-      <h2 class="name">Pistolou</h2>
-      <p class="meaning"><span>Meaning: </span> - Raiva</p>
-      <p class="description"><span>Description: </span> - O termo Pistolou é usado para dizer que uma pessoa está com muita raiva.</p>
-      <p class="example"><span>Example: </span> - A mina tá pistola hoje!</p>
+    <section class="results-search" data-js="results">
     </section>
   </main>
 
   <script src="./dist/main.js"></script>
 </body>
+
 </html>
