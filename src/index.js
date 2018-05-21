@@ -9,14 +9,14 @@ const $input = document.querySelector('[data-js="input"]')
 
 const data = get('/slang')
 
-const clean = arr => key => arr.filter(obj => obj.name === key)[0]
+const filterArray = arr => key => arr.filter(obj => obj.name === key)[0]
 
 const content = obj => obj ? Results(obj) : Error
 
 const handleSubmit = (e) => {
   e.preventDefault()
   const key = $input.value
-  data.then(slangs => insert($results)(content(clean(slangs)(key))))
+  data.then(slangs => insert($results)(content(filterArray(slangs)(key))))
 }
 
 $form.addEventListener('submit', handleSubmit)
